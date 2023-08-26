@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Webstudio</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="border">
+      <div class="header-container container">
+        <nav class="logo-nav list">
+          <a href="./index.html" class="link logo-color-iris lg-header"
+            >Web<span class="logo-color-navyblue">Studio</span></a
+          >
+
+          <ul class="nav-link list">
+            <li>
+              <a
+                href="./index.html"
+                class="link nav-link-portfolio active-hd current"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link nav-link-portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="" class="link nav-link-portfolio">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="address-header-styl">
+          <ul class="address-link list">
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="link address-header-styl"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="link address-header-styl"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section class="section-hero-bg">
+        <div class="container">
+          <h1 class="hero-h style-h-one">
+            Effective Solutions for Your Business
+          </h1>
+          <button class="btn style-button-hero" type="button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+      </section>
+      <!-- Strategy section -->
+      <section class="strategy-section">
+        <div class="container">
+          <h2 class="visually-hidden">Effective Solutions for Your Business</h2>
+          <ul class="strategy-iteams list">
+            <li class="str-style">
+              <div class="str-icon-wrapper">
+                <svg class="strategy-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="style-h-three">Strategy</h3>
+              <p class="style-section-p">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li class="str-style">
+              <div class="str-icon-wrapper">
+                <svg class="strategy-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="style-h-three">Punctuality</h3>
+              <p class="style-section-p">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="str-style">
+              <div class="str-icon-wrapper">
+                <svg class="strategy-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="style-h-three">Diligence</h3>
+              <p class="style-section-p">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li class="str-style">
+              <div class="str-icon-wrapper">
+                <svg class="strategy-icons" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="style-h-three">Technologies</h3>
+              <p class="style-section-p">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Doing section -->
+      <section class="doing-box">
+        <div class="container">
+          <h2 class="style-h-two">What are we doing</h2>
+          <ul class="doing-iteams list">
+            <li class="doing-style-list">
+              <img
+                src="./images/doing/photo1.jpg"
+                alt="A photo of a computer monitor with a website image"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li class="doing-style-list">
+              <img
+                src="./images/doing/photo2.jpg"
+                alt="Phone and four images of message interfaces"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li class="doing-style-list">
+              <img
+                src="./images/doing/photo3.jpg"
+                alt="Phone in hand on computer background"
+                width="360"
+                height="300"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Team section -->
+      <section class="section-team-style">
+        <div class="container">
+          <h2 class="style-h-two">Our Team</h2>
+          <ul class="team-iteams list">
+            <li class="team-bg-white">
+              <img
+                src="./images/team/img1.jpg"
+                alt="A man in a shirt with black hair and a beard"
+                width="264"
+                height="260"
+              />
+              <div class="title-team">
+                <h3 class="name style-h-three">Mark Guerrero</h3>
+                <p class="text style-section-p">Product Designer</p>
+
+                <ul class="list team-icons">
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-bg-white">
+              <img
+                src="./images/team/img2.jpg"
+                alt="Young man"
+                width="264"
+                height="260"
+              />
+              <div class="title-team">
+                <h3 class="name style-h-three">Tom Ford</h3>
+                <p class="text style-section-p">Frontend Developer</p>
+
+                <ul class="list team-icons">
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-bg-white">
+              <img
+                src="./images/team/img3.jpg"
+                alt="Young woman in a pink sweater"
+                width="264"
+                height="260"
+              />
+              <div class="title-team">
+                <h3 class="name style-h-three">Camila Garcia</h3>
+                <p class="text style-section-p">Marketing</p>
+
+                <ul class="list team-icons">
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-bg-white">
+              <img
+                src="./images/team/img4.jpg"
+                alt="Young woman in a grey sweater"
+                width="264"
+                height="260"
+              />
+              <div class="title-team">
+                <h3 class="name style-h-three">Daniel Wilson</h3>
+                <p class="text style-section-p">UI Designer</p>
+
+                <ul class="list team-icons">
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks-wrapper">
+                    <a class="link team-link" href="">
+                      <svg class="networks-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Customers section -->
+      <section class="customs-box">
+        <div class="container">
+          <h2 class="style-h-two">Customers</h2>
+          <ul class="list company-icon">
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customers-wrapper">
+              <a class="ctm-link link" href="#">
+                <svg class="customers-icons" width="104" height="56">
+                  <use href="./images/icons.svg#icon-Logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer-bg-color">
+      <div class="container container-ft">
+        <div class="ft-logo">
+          <a href="./index.html" class="link logo-color-iris logo-footer"
+            >Web<span class="logo-color-cloud">Studio</span></a
+          >
+          <p class="text-footer-p">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+
+        <div class="container stn-icon-ft">
+          <p class="text-icons-p">Social media</p>
+          <ul class="list ft-section-icn">
+            <li class="wrapper-icons-footer">
+              <a class="link ft-link" href="">
+                <svg class="icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="wrapper-icons-footer">
+              <a class="link ft-link" href="">
+                <svg class="icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="wrapper-icons-footer">
+              <a class="link ft-link" href="">
+                <svg class="icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="wrapper-icons-footer">
+              <a class="link ft-link" href="">
+                <svg class="icons-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-container-ft">
+          <p class="text-icons-p">Subscribe</p>
+          <form class="footer-form-label" name="subscribe-form">
+            <label class="footer-form" for="subscribe-email">
+              <input
+                class="footer-form-input"
+                name="subscribe-email"
+                type="email"
+                id="subscribe-email"
+                placeholder="E-mail"
+            /></label>
+            <button class="btn-subscribe" type="submit">
+              Subscribe
+              <svg class="icon-plane" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop" data-modal>
+      <div class="modal is-hidden">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-md"></use>
+          </svg>
+        </button>
+
+        <!-- Form content -->
+
+        <p class="caption">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="modal-form-field">
+            <label class="label-style" for="user-name">Name</label>
+            <div class="input-icons-contsiner">
+              <input
+                class="style-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="icone-modal-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="label-style" for="user-phone">Phone</label>
+            <div class="input-icons-contsiner">
+              <input
+                class="style-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="icone-modal-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="label-style" for="user-email">Email</label>
+            <div class="input-icons-contsiner">
+              <input
+                class="style-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="icone-modal-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-textarea">
+            <label class="label-style" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-coment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-form-checkbox">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="text-inform" for="user-privacy">
+              <span class="agreement-checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="accent-link-modal" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="buttton-form-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

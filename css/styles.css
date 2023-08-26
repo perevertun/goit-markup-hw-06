@@ -57,14 +57,35 @@ img {
   height: auto;
 }
 
+/* Phone screen */
 .container {
-  width: 1158px;
+  min-width: 396px;
+  max-width: 428px;
+
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
+/* Tablet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    
+  }
+}
+
+/* Desktop screen */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /**
   |============================
   | Header section

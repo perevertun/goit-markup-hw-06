@@ -202,6 +202,12 @@ background-color: var(--ocean);
   gap: 40px;
 }
 
+@media only screen and (max-width: 767.98px) {
+   .nav-link {
+    display: none; 
+  }
+}
+
 .address-header-styl {
   font-style: normal;
   text-decoration: none;
@@ -216,6 +222,13 @@ background-color: var(--ocean);
 .address-header-styl:hover,
 .address-header-styl:focus {
   color: var(--ocean);
+}
+
+@media only screen and (max-width: 767.98px) {
+   .address-header-styl {
+    display: none;
+    
+  }
 }
 
 .address-link {
@@ -1317,3 +1330,102 @@ input:checked + label > span {
   transition: background-color var(--animation);
 }
 
+/**
+  |============================
+  | Mobile menu
+  |============================
+*/
+
+.menu-toggle {
+  min-width: 32px;
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  padding-left: 40px;
+  padding-top: 80px;
+  background-color: var(--white);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.mobile-menu {
+  /* padding: 0;
+  margin: 0;
+  list-style: none; */
+}
+
+.mobile-menu-items:not(:last-child) {
+margin-bottom: 40px;
+}
+
+.mibile-menu-link {
+  display: block;
+  
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+
+.mob-close-border {
+padding: 0;
+width: 24px;
+height: 24px;
+
+background: var(--cornflower);
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobil-close-icon {
+fill: var(--navyblue);
+}
